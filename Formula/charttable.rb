@@ -1,28 +1,28 @@
 class Charttable < Formula
   desc "Native map renderer for the MapLibre style spec"
   homepage "https://github.com/beetlebugorg/charttable"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/beetlebugorg/charttable/releases/download/v0.1.2/charttable-0.1.2-aarch64-macos.tar.gz"
-      sha256 "a9df6e0232291663a7ed5bbc5bbef8f965218d73d077ffd21bd48dbb64e98858"
+      url "https://github.com/beetlebugorg/charttable/releases/download/v0.1.3/charttable-0.1.3-aarch64-macos.tar.gz"
+      sha256 "fa1d9769c079c1eb13403f404a69e42f357aa788cf31f6e92f3a0154985e2974"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/charttable/releases/download/v0.1.2/charttable-0.1.2-x86_64-macos.tar.gz"
-      sha256 "0520500659d4e919ed95e54fdc9eada32ddf0b63e546a37f47880a90e658f721"
+      url "https://github.com/beetlebugorg/charttable/releases/download/v0.1.3/charttable-0.1.3-x86_64-macos.tar.gz"
+      sha256 "50828dd35474f96e359220cc80debd1af625dea9bb04a01144a9297c1692fbe4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/beetlebugorg/charttable/releases/download/v0.1.2/charttable-0.1.2-aarch64-linux-gnu.tar.gz"
-      sha256 "d0a5c350f060bc692dad231515c47ff0816bff9e1b21f8b334b86dc448e257f4"
+      url "https://github.com/beetlebugorg/charttable/releases/download/v0.1.3/charttable-0.1.3-aarch64-linux-gnu.tar.gz"
+      sha256 "ed27ad6b47a06943669de27a5587e03986aee23299d8955afb7403f5245006c0"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/charttable/releases/download/v0.1.2/charttable-0.1.2-x86_64-linux-gnu.tar.gz"
-      sha256 "4e1122a62435135f5e47dcbab5e684100557761cc026ed862552cce7d3476bb7"
+      url "https://github.com/beetlebugorg/charttable/releases/download/v0.1.3/charttable-0.1.3-x86_64-linux-gnu.tar.gz"
+      sha256 "695fa230e19227b8572db1c4f796a0e98b5c8e1c38dadb9f54f1f16b25b683ab"
     end
   end
 
@@ -32,15 +32,17 @@ class Charttable < Formula
     # soname.
     lib.install Dir["lib/*"]
 
-    # Zig writes a bare file name as the dylib id, and dyld does not search the
-    # Homebrew prefix. Name the installed path instead, so a program that links
-    # -lcharttable finds the library at run time. Editing a Mach-O header
-    # breaks the ad-hoc signature on Apple Silicon, so sign it again.
+    # Zig writes @rpath as the dylib id, which only resolves for a program that
+    # sets an rpath. Name the installed path instead, so anything that links
+    # -lcharttable finds the library at run time. The library is built with
+    # -headerpad_max_install_names, which is what leaves room for a path this
+    # long. Editing a Mach-O header breaks the ad-hoc signature on Apple
+    # Silicon, so sign it again.
     return unless OS.mac?
 
     dylib = lib/"libcharttable.#{version}.dylib"
     system "install_name_tool", "-id", lib/"libcharttable.#{version.major}.dylib", dylib
-    MachO.codesign!(dylib) if Hardware::CPU.arm?
+    system "codesign", "--force", "--sign", "-", dylib if Hardware::CPU.arm?
   end
 
   test do
