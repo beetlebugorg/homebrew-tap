@@ -1,28 +1,28 @@
 class Charttable < Formula
   desc "Native map renderer for the MapLibre style spec"
   homepage "https://github.com/beetlebugorg/charttable"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/beetlebugorg/charttable/releases/download/v0.2.1/charttable-0.2.1-aarch64-macos.tar.gz"
-      sha256 "c6433e00455652cf7393ce881989af585e7869f4b2f1c8bc7508492b5331863f"
+      url "https://github.com/beetlebugorg/charttable/releases/download/v0.3.0/charttable-0.3.0-aarch64-macos.tar.gz"
+      sha256 "9144747d2a2321c720cd532fbe04ed86b75fd2ebf2a563dd745b88b39e29bf16"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/charttable/releases/download/v0.2.1/charttable-0.2.1-x86_64-macos.tar.gz"
-      sha256 "5eb6aaccab549a3940d5676f540c96aad6e9a88924ab26688639abed7fc3e6ab"
+      url "https://github.com/beetlebugorg/charttable/releases/download/v0.3.0/charttable-0.3.0-x86_64-macos.tar.gz"
+      sha256 "40c6c670d48cb3e911bb808ea849529b13006d2ca82cd7209ed127051d370a31"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/beetlebugorg/charttable/releases/download/v0.2.1/charttable-0.2.1-aarch64-linux-gnu.tar.gz"
-      sha256 "6211d4787bfb62fdc300463610f26c1c3b20f9c404cbc92a262f6d33c56259ca"
+      url "https://github.com/beetlebugorg/charttable/releases/download/v0.3.0/charttable-0.3.0-aarch64-linux-gnu.tar.gz"
+      sha256 "2974d6b502ebb6495be952a87bf901a3777b01aa8939316102e31a3fc99a1dbf"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/charttable/releases/download/v0.2.1/charttable-0.2.1-x86_64-linux-gnu.tar.gz"
-      sha256 "8ac2781ccdfaf0b0ed54ef1815a4ef92f472ef7daa45d7c43017f6c28aad0d74"
+      url "https://github.com/beetlebugorg/charttable/releases/download/v0.3.0/charttable-0.3.0-x86_64-linux-gnu.tar.gz"
+      sha256 "82f0e5dc6b7d35bad1f6ce29295b456748616827d7092d452cf8eae232a35a9e"
     end
   end
 
