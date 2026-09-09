@@ -1,28 +1,28 @@
 class Tile57 < Formula
   desc "Nautical chart engine: IHO S-101 and S-57 charts to tiles, PNG, and PDF"
   homepage "https://github.com/beetlebugorg/tile57"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/beetlebugorg/tile57/releases/download/v0.3.1/tile57-0.3.1-aarch64-macos.tar.gz"
-      sha256 "d0e9bc66b92aa0583a6d0474b61773015cf1b0c8759bf9f2d8b71394f3d47e3e"
+      url "https://github.com/beetlebugorg/tile57/releases/download/v0.4.0/tile57-0.4.0-aarch64-macos.tar.gz"
+      sha256 "1eccb3f3087965a26d76fcde858112605086e9adf1a4b3c8bae278487da91f29"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/tile57/releases/download/v0.3.1/tile57-0.3.1-x86_64-macos.tar.gz"
-      sha256 "72bb9526c6e6bfaa6435e9a37a467f1ceafb38e8c7e9f37618e26e72d6e7bf13"
+      url "https://github.com/beetlebugorg/tile57/releases/download/v0.4.0/tile57-0.4.0-x86_64-macos.tar.gz"
+      sha256 "4b95a701c87afac350ce08e4fedae10ed1d98b54dee938d13a5a718051813ea6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/beetlebugorg/tile57/releases/download/v0.3.1/tile57-0.3.1-aarch64-linux-gnu.tar.gz"
-      sha256 "20d4aedc705ddb779a658e0760602657881ed37bb9ef10ddbb4c90d0025a4db5"
+      url "https://github.com/beetlebugorg/tile57/releases/download/v0.4.0/tile57-0.4.0-aarch64-linux-gnu.tar.gz"
+      sha256 "65577ae5d5f0bf8e101f37e6d380d9404306e925d76167ec30141a960b9b0df3"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/tile57/releases/download/v0.3.1/tile57-0.3.1-x86_64-linux-gnu.tar.gz"
-      sha256 "adbc038bbb5073e6846666936624b4c9c8ace28250c71d793c3e71d7e1801ef7"
+      url "https://github.com/beetlebugorg/tile57/releases/download/v0.4.0/tile57-0.4.0-x86_64-linux-gnu.tar.gz"
+      sha256 "a633c63be078c077aa605e1fd2ee8b273078491b8fbbe963e7bbd508262ad98a"
     end
   end
 
