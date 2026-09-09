@@ -1,6 +1,6 @@
 cask "lookout-marine" do
-  version "0.1.0"
-  sha256 "45c96affd31b019f7ee7be23b23e901a6554c76bc02fe6c763e0d8c601e68c8b"
+  version "0.2.0"
+  sha256 "73fc45cb532dff73973484125badd58d4e2ccbc91dd3c1cd4f993aa27c3e2ddc"
 
   url "https://github.com/beetlebugorg/lookout-marine/releases/download/v#{version}/LookoutMarine-#{version}-macos-arm64.dmg"
   name "Lookout Marine"
