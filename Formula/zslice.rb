@@ -7,23 +7,23 @@ class Zslice < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/beetlebugorg/zslice/releases/download/v0.6.0-beta/zslice-0.6.0-beta-aarch64-macos.tar.gz"
-      sha256 "ea96343c731905c3377bb0517c4d5e503e29145ab83ce82e21f966627f6e0130"
+      url "https://github.com/beetlebugorg/zslice/releases/download/v0.6.1-beta/zslice-0.6.1-beta-aarch64-macos.tar.gz"
+      sha256 "9ab8fa037ff17e797187cfb59343acd95888930d65861f584a89cb19b53310bf"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/zslice/releases/download/v0.6.0-beta/zslice-0.6.0-beta-x86_64-macos.tar.gz"
-      sha256 "aa6e0b83630126370c7a9f96fc9a808721c003afd6046fbfaaf2c525495f7638"
+      url "https://github.com/beetlebugorg/zslice/releases/download/v0.6.1-beta/zslice-0.6.1-beta-x86_64-macos.tar.gz"
+      sha256 "f32d4700bd092e5e2a21c997cdf3955fa8217a0982ed1f8608a2bb2e1a7e9d34"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/beetlebugorg/zslice/releases/download/v0.6.0-beta/zslice-0.6.0-beta-aarch64-linux-musl.tar.gz"
-      sha256 "4e810e6f9331257c03051d6392757ea29fb4eb32f458f9f137c4202d6e52c5e1"
+      url "https://github.com/beetlebugorg/zslice/releases/download/v0.6.1-beta/zslice-0.6.1-beta-aarch64-linux-musl.tar.gz"
+      sha256 "a2d87e2eb495f8b73beca6bac4cbf7f37142feb4581c38a55a8bc3fe220eae21"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/zslice/releases/download/v0.6.0-beta/zslice-0.6.0-beta-x86_64-linux-musl.tar.gz"
-      sha256 "54b56e235a0bbeba93fcaf1582e4dbdbbac84b6c3885d79a37b9190fc4eb7cda"
+      url "https://github.com/beetlebugorg/zslice/releases/download/v0.6.1-beta/zslice-0.6.1-beta-x86_64-linux-musl.tar.gz"
+      sha256 "2b1596f9ae19c7ef63c2348b69200414bc65ddb88c26dca7247668ab71f34ba4"
     end
   end
 

@@ -2,8 +2,8 @@
 # notarized. packaging/homebrew/tap.sh in the zslice repository writes this
 # file for each release.
 cask "zslice" do
-  version "0.6.0-beta"
-  sha256 "6aa229a989e3dbf8e4cb3469c3361ceb052f48f6e9319f9472be2ce522d1db7b"
+  version "0.6.1-beta"
+  sha256 "bafdcf2db116ef08b0b2cb9e4be07e358d766e5a7384a668be01dc9089d703dd"
 
   url "https://github.com/beetlebugorg/zslice/releases/download/v#{version}/zslice-#{version}-macos-universal.dmg"
   name "zslice"
