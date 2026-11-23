@@ -9,22 +9,22 @@ class Ztcl < Formula
   on_macos do
     on_arm do
       url "https://github.com/beetlebugorg/ztcl/releases/download/v0.1.0-alpha/ztcl-0.1.0-alpha-aarch64-macos.tar.gz"
-      sha256 "5b8c194d29d7656f89afbd7b15da23b222856c4fac01d527ebdfc21a453f2aca"
+      sha256 "2d4adc858e5b03ddb785ee61d79720299c0d7dcc66b2b2bdc3e2fc9224b1e31f"
     end
     on_intel do
       url "https://github.com/beetlebugorg/ztcl/releases/download/v0.1.0-alpha/ztcl-0.1.0-alpha-x86_64-macos.tar.gz"
-      sha256 "4059e7af0faabef93ef43941d06a5f38c435b0fc2aa5e08fdafc625576b98541"
+      sha256 "3f9fcb6e6bc6a7befcdbd17845ffd9c5077353e0b9da8af81ecee1a38cef1c4f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/beetlebugorg/ztcl/releases/download/v0.1.0-alpha/ztcl-0.1.0-alpha-aarch64-linux-musl.tar.gz"
-      sha256 "fb043878c4d1c887594454e1478c0a29616d6a667d6de1932b2478d64b0678f4"
+      sha256 "0f60ee1fb033249525a1c7ef3630ddec02e6423a8f19312122d22a0b560e3fb2"
     end
     on_intel do
       url "https://github.com/beetlebugorg/ztcl/releases/download/v0.1.0-alpha/ztcl-0.1.0-alpha-x86_64-linux-musl.tar.gz"
-      sha256 "b755744e8b5000b209c2ffb8954d7d8a64a3316387514c9625200982df6bb0ef"
+      sha256 "f7398e44867400ce3f9ffa5cc28ed7bf41f9fc23e49e81cecb88d6a3b89efee9"
     end
   end
 
