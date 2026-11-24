@@ -4,8 +4,8 @@
 class ZsliceGtk < Formula
   desc "Slicer for FDM 3D printers (GTK 4 app for Linux)"
   homepage "https://zslice.beetlebug.org/"
-  url "https://github.com/beetlebugorg/zslice/archive/refs/tags/v0.6.1-beta.tar.gz"
-  sha256 "e12874e6fa1aa48600a95971288f590a89d2e85f12584a54ab0d6ceede610637"
+  url "https://github.com/beetlebugorg/zslice/archive/refs/tags/v0.6.2-beta.tar.gz"
+  sha256 "fd8ec6b648e30f646f91ef08d389b6cac5cd6844e59b92d37f832b179bd56596"
   license "AGPL-3.0-or-later"
 
   depends_on "meson" => :build
