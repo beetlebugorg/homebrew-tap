@@ -1,7 +1,7 @@
 # The ztk formula. packaging/homebrew/tap.sh in the ztk repository
 # writes this file for each release.
 class Ztk < Formula
-  desc "Experimental Tk replacement written in Zig"
+  desc "GUI toolkit AI can see: Tk rebuilt in Zig"
   homepage "https://beetlebug.org/ztk/"
   version "0.2.0-beta"
   license "BSD-2-Clause"
