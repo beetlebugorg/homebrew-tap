@@ -3,28 +3,28 @@
 class Ztk < Formula
   desc "GUI toolkit AI can see: Tk rebuilt in Zig"
   homepage "https://beetlebug.org/ztk/"
-  version "0.2.0-beta"
+  version "1.0.0-beta.2"
   license "BSD-2-Clause"
 
   on_macos do
     on_arm do
-      url "https://github.com/beetlebugorg/ztk/releases/download/v0.2.0-beta/ztk-0.2.0-beta-aarch64-macos.tar.gz"
-      sha256 "0174e3bbc4aa1613d84d78d853091812016eb3ce6454dc0e07b3538f0d845840"
+      url "https://github.com/beetlebugorg/ztk/releases/download/v1.0.0-beta.2/ztk-1.0.0-beta.2-aarch64-macos.tar.gz"
+      sha256 "7adea1c46747f8af4c14509ac66b7fd555ccc3a4e75b100dd08721fabc3c73e6"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/ztk/releases/download/v0.2.0-beta/ztk-0.2.0-beta-x86_64-macos.tar.gz"
-      sha256 "770915b9ba70a77c560ba5d25fe0b26f084223dcd385c5d6df87eafe86c85252"
+      url "https://github.com/beetlebugorg/ztk/releases/download/v1.0.0-beta.2/ztk-1.0.0-beta.2-x86_64-macos.tar.gz"
+      sha256 "4b3e4ac01f5dacde250071c9050f2c4e53afd23f1c3f32732c3ec33b95753c72"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/beetlebugorg/ztk/releases/download/v0.2.0-beta/ztk-0.2.0-beta-aarch64-linux-musl.tar.gz"
-      sha256 "0d8bb974a724226266a560a40b8b93aee12c12d1f529a9a42312eca53df3de62"
+      url "https://github.com/beetlebugorg/ztk/releases/download/v1.0.0-beta.2/ztk-1.0.0-beta.2-aarch64-linux-musl.tar.gz"
+      sha256 "a97b4f23cf71099c858df8b766a08b004b9c6e13a8205dae47d17a340bed570f"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/ztk/releases/download/v0.2.0-beta/ztk-0.2.0-beta-x86_64-linux-musl.tar.gz"
-      sha256 "49e5f87c2f6741a458cdc38c5f1133dc75fafff22f0a59bf0b166e85e17d788f"
+      url "https://github.com/beetlebugorg/ztk/releases/download/v1.0.0-beta.2/ztk-1.0.0-beta.2-x86_64-linux-musl.tar.gz"
+      sha256 "04b0aca442bc8b1164fede3480845447adf1fcaa8be3795a8730c646912323c2"
     end
   end
 
