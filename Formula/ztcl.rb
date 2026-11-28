@@ -3,28 +3,28 @@
 class Ztcl < Formula
   desc "Experimental sandboxed Tcl interpreter written in Zig"
   homepage "https://github.com/beetlebugorg/ztcl"
-  version "0.2.0-beta"
+  version "1.0.0-beta.1"
   license "BSD-2-Clause"
 
   on_macos do
     on_arm do
-      url "https://github.com/beetlebugorg/ztcl/releases/download/v0.2.0-beta/ztcl-0.2.0-beta-aarch64-macos.tar.gz"
-      sha256 "c77d7e749d7aedffd0c206ea601e42824f8eb1f5a84c31049b86c8e09745826a"
+      url "https://github.com/beetlebugorg/ztcl/releases/download/v1.0.0-beta.1/ztcl-1.0.0-beta.1-aarch64-macos.tar.gz"
+      sha256 "7075ea9695d068d2125e9d826a36378e4256e5f978499360a6430f6107b5ea7b"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/ztcl/releases/download/v0.2.0-beta/ztcl-0.2.0-beta-x86_64-macos.tar.gz"
-      sha256 "7c0d5e7efed3809cb03600e8b2b15bac252687323a382748b8cdbf52548c60a7"
+      url "https://github.com/beetlebugorg/ztcl/releases/download/v1.0.0-beta.1/ztcl-1.0.0-beta.1-x86_64-macos.tar.gz"
+      sha256 "750f353632161bc06d12adf2f28b73a1455917ed3fed9efaa2da97acad61ef36"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/beetlebugorg/ztcl/releases/download/v0.2.0-beta/ztcl-0.2.0-beta-aarch64-linux-musl.tar.gz"
-      sha256 "3a80db6eb820d95bede4d4e3832a698bf6cd6639291e128b2c6de8462b4899e7"
+      url "https://github.com/beetlebugorg/ztcl/releases/download/v1.0.0-beta.1/ztcl-1.0.0-beta.1-aarch64-linux-musl.tar.gz"
+      sha256 "8aacddbbc04d6e98ca98785ac33c41bd432abe25f55558427f6100db80306b8f"
     end
     on_intel do
-      url "https://github.com/beetlebugorg/ztcl/releases/download/v0.2.0-beta/ztcl-0.2.0-beta-x86_64-linux-musl.tar.gz"
-      sha256 "d15c66886e2fb2deb1722210d90ebd0d6de163a04d32f07227da1bf1ff5760a5"
+      url "https://github.com/beetlebugorg/ztcl/releases/download/v1.0.0-beta.1/ztcl-1.0.0-beta.1-x86_64-linux-musl.tar.gz"
+      sha256 "10d51669b5cebcacc737b983dce1b769991ecb55721f23d048802e5127a063d4"
     end
   end
 
